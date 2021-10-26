@@ -1,5 +1,9 @@
-export type Pricing = {
+export interface Repo {
   id: number;
+  user: string;
   name: string;
-  image: string;
-};
+  stars: number;
+  issues: number;
+  avatar_url: string;
+  description: string;
+}

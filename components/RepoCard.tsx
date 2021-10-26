@@ -1,10 +1,10 @@
 import * as React from "react";
 import Image from "next/image";
-import { Pricing } from "../interfaces";
+import { Repo } from "../interfaces";
 import { HeadlineTwo, Card, Button, Details } from "./common";
 
 type Props = {
-  data: Pricing;
+  data: Repo;
 };
 
 const PricingCard = ({ data }: Props) => (
