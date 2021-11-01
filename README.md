@@ -1,14 +1,8 @@
-# flair.hr Pricing Plans 
-
-## Preview
-
-Preview live on [Vercel](https://flairhr-pricing-plans.vercel.app/):
+# GitHub Trending Repositories 
 
 ### Features
 
-- **getStaticProps for pricing data**.
-- **Button hover animation**.
-- **Tooltip on hover**.
-- **Responsive**.
+- **GitHub REST API**.
+- **Styled components**.
 
 ##### Built with TypeScript Next.js Template
