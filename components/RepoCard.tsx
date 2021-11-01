@@ -7,33 +7,30 @@ type Props = {
   data: Repo;
 };
 
-const PricingCard = ({ data }: Props) => (
+const RepoCard = ({ data }: Props) => (
   <Card>
     <aside>
       <Image
-        src={"/img/user-img.jpg"}
-        alt={data.name}
-        width={230}
-        height={230}
+        src={data.owner ? data.owner.avatar_url : "/images/user-img.jpg"}
+        alt={data.owner.login}
+        width={200}
+        height={200}
       />
-      <h4>Escanor16</h4>
+      <h4>{data.owner.login}</h4>
     </aside>
     <div>
       <HeadlineTwo>{data.name}</HeadlineTwo>
       <p>
-        A recusandae eum ipsam ducimus, quidem qui accusantium illo soluta
-        praesentium magni!
+        {data.description
+          ? data.description
+          : "No description available for this repository"}
       </p>
       <Details>
-        <Button>Stars:</Button>
-        <Button>Issues:</Button>
-        <span>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit at
-          culpa odio voluptatem similique doloribus.
-        </span>
+        <Button>Stars: {data.stargazers_count}</Button>
+        <Button>Issues: {data.open_issues_count}</Button>
       </Details>
     </div>
   </Card>
 );
 
-export default PricingCard;
+export default RepoCard;

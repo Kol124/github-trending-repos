@@ -5,9 +5,9 @@ import Head from "next/head";
 
 type Props = {
   children?: ReactNode;
-  title?: string;
-  keywords?: string;
-  description?: string;
+  title?: "GitHub Trending Repositories";
+  keywords?: "GitHub Trending Repositories";
+  description?: "GitHub Trending Repositories, GitHub, APIs, git";
 };
 
 const Layout = ({ children, keywords, description, title }: Props) => (
@@ -26,17 +26,14 @@ const Layout = ({ children, keywords, description, title }: Props) => (
 );
 
 const BodyContainer = styled.div`
-  padding: 2.5rem 4rem;
-
-  @media (max-width: 480px) {
-    padding: 1rem;
-  }
+  max-width: 1200px;
+  margin: 2rem auto;
 `;
 
-Layout.defaultProps = {
-  title: "GitHub Trending Repositories",
-  description: "GitHub Trending Repositories",
-  keywords: "GitHub Trending Repositories, GitHub, APIs, git,",
-};
+// Layout.defaultProps = {
+//   title: "",
+//   description: "GitHub Trending Repositories",
+//   keywords: ",",
+// };
 
 export default Layout;

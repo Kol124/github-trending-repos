@@ -1,9 +1,13 @@
+export default interface owner {
+  login: string;
+  avatar_url: string;
+}
+
 export interface Repo {
   id: number;
-  user: string;
   name: string;
-  stars: number;
-  issues: number;
-  avatar_url: string;
+  owner: owner;
+  stargazers_count: number;
+  open_issues_count: number;
   description: string;
 }

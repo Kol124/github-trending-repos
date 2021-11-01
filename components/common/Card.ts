@@ -9,6 +9,7 @@ export const Card = styled.div`
 
   h4 {
     text-align: center;
+    margin-top: 10px;
   }
 
   > div {
